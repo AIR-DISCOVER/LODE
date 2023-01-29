@@ -1,0 +1,93 @@
+GENERAL:
+  task: train  # train, valid, ssc_pretrain, ssc_valid, visualize
+  dataset_dir: ../dataset
+  logging_root: ./logs
+  eval_logging_root: ./eval_logs
+  debug: True
+
+
+DATA_IO:
+  num_workers: 10
+  train_batch_size: 2
+  valid_batch_size: 1 # get discrete sdf for every single sample
+
+  use_off_vertex: True
+  use_on_surround: False
+  off_count_scale: 2
+
+  ignore_off_label: False
+
+  augmentation: True
+  augmentation_flip: False
+  augmentation_angle: 45
+
+  complt_num_per_class: [26327220, 2632722, 829245, 16063541, 1812243, 59342174, 1170307, 783713, 35259807, 2308931, 9040578, 3453465]
+
+  
+TRAIN:
+  steps_til_summary: 10
+  steps_til_eval: 50
+  epochs_til_ckpt: 5
+
+  lr: 0.0001
+  lr_scheduler: True
+  num_epochs: 200
+  loss_weights: [3000, 100, 100, 50, 100, 100, 100]
+  clip_grad: True
+  moo: False
+
+  eval_threshold: [0.015, 0.012, 0.01, 0.008, 0.006]
+
+  chunk_size: 4 # scale size
+
+  shape_embedding_size: 256
+  shape_normalize: True
+  shape_sample_strategy: trilinear # trilinear or nearest
+
+  encode_xyz: True
+  encode_levels: 10
+  inc_input: True
+
+  class_count: 12 # semantic poss ssc classes
+
+  use_ssc_pretrain: False
+  ssc_pretrain_path: /
+
+  resume: False
+  resume_path: /
+
+  D_TRAIN:
+    D_input: occupancy # occupancy or radial or radial_height
+
+    pruning_choice: [True, True, True, True, True]
+    output_layers: 2 # 2 or 4
+    nonlinearity: elu # elu or relu
+
+  G_TRAIN:
+    on_surface_size: 16000
+
+    nonlinearity: sine # sine or relu
+    hidden_features: 256
+    num_hidden_layers: 3 # hidden layers: n; total layers: n+1
+
+
+EVAL:
+  checkpoint_path: /
+  ssc_pretrain_path: /
+
+  eval_threshold: [0.015, 0.012, 0.011, 0.01, 0.008, 0.006, 0.004, 0.002]
+
+  eval_cd: False
+
+  save_predict_point: True
+  mesh:
+    create_mesh: True
+    mesh_level: 0.015
+    ratio: [0.5, 1.0, 2.0]  # multi-resolution
+
+
+
+
+
+
+
