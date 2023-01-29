@@ -99,12 +99,16 @@ For the SemanticPOSS dataset, change `opt.yaml` to `opt_semanticposs.yaml`, chan
 
 ## Model Zoo
 Our pre-trained models can be downloaded here:
-<table border="2">
+
+<table class="tg">
+<thead>
     <tr>
         <td style="background-color:green"><center><b>Table</td> 
         <td style="background-color:green"><center><b>Ablation</td> 
         <td style="background-color:green" colspan="5"><center><b>Checkpoints</td> 
    </tr>
+</thead>
+<tbody>
     <tr>
         <td><b><center>Table I</td>    
         <td><b><center>Dataset</td>    
@@ -312,14 +316,18 @@ Our pre-trained models can be downloaded here:
         <td>
         </td>  
     </tr>
+</tbody>
 </table>
 
-<table border="2">
+<table class="tg">
+<thead>
     <tr>
         <td style="background-color:green"><center><b>Table</td> 
         <td style="background-color:green"><center><b>Ablation</td> 
         <td style="background-color:green" colspan="5"><center><b>Corresponding Configs</td> 
-   </tr>
+    </tr>
+</thead>
+<tbody>
     <tr>
         <td><b><center>Table I</td>    
         <td><b><center>Dataset</td>    
@@ -510,4 +518,5 @@ Our pre-trained models can be downloaded here:
         <td>
         </td>  
     </tr>
+</tbody>
 </table>
