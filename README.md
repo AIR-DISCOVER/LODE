@@ -24,7 +24,7 @@ We use the proposed model trained on the KITTI dataset to predict implicit compl
 ## Introduction
 
 Scene completion refers to obtaining dense scene representation from an incomplete perception of complex 3D scenes. 
-This helps robots understand the environment in scenarios such as autonomous driving, as well as giving human-friendly representations to improve human understanding of the visual information captured by robots.
+This helps robots detect multi-scale obstacles and analyse object occlusions in scenarios such as autonomous driving.
 Recent advances show that implicit representation learning can be leveraged for continuous scene completion and achieved through physical constraints like Eikonal equations.
 However, former Eikonal completion methods only demonstrate results on watertight meshes at a scale of tens of meshes.
 None of them are successfully done for non-watertight LiDAR point clouds of open large scenes at a scale of thousands of scenes.
