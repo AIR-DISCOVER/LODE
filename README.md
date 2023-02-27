@@ -4,7 +4,7 @@ This repository is an official implementation of [**LODE**]():
 
 LODE: Locally Conditioned Eikonal Implicit Scene Completion from Sparse LiDAR
 
-[Pengfei Li](https://scholar.google.com/citations?hl=en&user=hmii_L8AAAAJ), Ruowen Zhao, [Yongliang Shi](https://github.com/liangyongshi), [Hao Zhao](https://sites.google.com/view/fromandto), [Guyue Zhou](https://air.tsinghua.edu.cn/en/info/1046/1196.htm), [Ya-Qin Zhang](https://air.tsinghua.edu.cn/en/info/1046/1188.htm)
+[Pengfei Li](https://scholar.google.com/citations?hl=en&user=hmii_L8AAAAJ), Ruowen Zhao, [Yongliang Shi](https://github.com/liangyongshi), [Hao Zhao](https://sites.google.com/view/fromandto), Jirui Yuan, [Guyue Zhou](https://air.tsinghua.edu.cn/en/info/1046/1196.htm), [Ya-Qin Zhang](https://air.tsinghua.edu.cn/en/info/1046/1188.htm)
  from <a href="http://air.tsinghua.edu.cn/EN/" target="_blank">Institute for AI Industry Research(AIR), Tsinghua University</a>.
 
 ![demo](doc/demo.gif)
