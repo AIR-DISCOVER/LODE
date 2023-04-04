@@ -1,6 +1,6 @@
 # LODE: Locally Conditioned Eikonal Implicit Scene Completion from Sparse LiDAR
 
-This repository is an official implementation of [**LODE**]():
+This repository is an official implementation of [**LODE**](https://arxiv.org/abs/2302.14052):
 
 LODE: Locally Conditioned Eikonal Implicit Scene Completion from Sparse LiDAR
 
@@ -37,7 +37,12 @@ We extensively ablate our methods and demonstrate that the proposed formulation 
 
 If you find our work useful in your research, please consider citing:
 
-    TODO
+    @article{li2023lode,
+      title={LODE: Locally Conditioned Eikonal Implicit Scene Completion from Sparse LiDAR},
+      author={Li, Pengfei and Zhao, Ruowen and Shi, Yongliang and Zhao, Hao and Yuan, Jirui and Zhou, Guyue and Zhang, Ya-Qin},
+      journal={arXiv preprint arXiv:2302.14052},
+      year={2023}
+    }
 
 ## Installation
 
